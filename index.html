@@ -1,0 +1,59 @@
+<!DOCTYPE html><html lang="en"><head>
+    <script src="p5.js"></script>
+    <script src="p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+
+    <style>
+      h1{
+        text-align: center;
+      }
+      *{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: rgb(196, 104, 19);
+      }
+      #codes{
+        position: absolute;
+        top: 65%;
+        /* bottom: 50%; */
+        left: 10%;
+        list-style-type: none;
+        font-size: 150%;
+        padding: 10px;
+        border:3px solid rgb(10, 147, 201);
+        border-radius: 5px;
+      }
+      #huff-text{
+        position: absolute;
+        top: 20%;
+        right: 1%;
+        width: 30%;
+        height: 40%;
+        /* text-align: center; */
+        border:5px dashed rgb(10, 147, 201);
+      }
+      #btn{
+        position: absolute;
+        top: 65%;
+        right: 1%;
+        width: 7%;
+        height: 6%;
+        border:3px solid rgb(10, 147, 201);
+        font-size: large;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body> 
+    <h1>Huffman Coding</h1>
+    <ul id="codes">
+    </ul>
+
+    <textarea type="text" id="huff-text" spellcheck="false" placeholder="Add text to create huffman tree"></textarea>
+    <button type="button" id="btn">Submit</button>
+
+    <script src="huffman.js"></script>
+    <script src="sketch.js"></script>
+    <script src="script.js"></script>
+
+</body></html>
